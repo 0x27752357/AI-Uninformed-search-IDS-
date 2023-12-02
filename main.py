@@ -2,7 +2,7 @@ import turtle, sys, math, random, time
 
 grid = []
 
-with open("Test Case/test_case_2.txt", 'r') as file:
+with open("Test Case/test_case_3.txt", 'r') as file:
     first_line = file.readline().strip()
 
     for line in file:
@@ -15,9 +15,9 @@ with open("Test Case/test_case_2.txt", 'r') as file:
 
 file.close()
 
-
+first_line = first_line.split(',')
 rows = int(first_line[0])
-cols = int(first_line[2])
+cols = int(first_line[1])
 
 grid = grid[:rows]
 
